@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const PORT = process.env.PORT || 3000;
 const {Incubator} = require("./models/index")
 const cors = require("cors");
 
@@ -60,6 +61,6 @@ app.delete("/api/v1/delete/incubator/:incubatorid", (req, res) => {
 
 app.listen(3000, err => {
   if (!err) {
-    console.log(`Sever on port ${3000}`);
+    console.log(`Sever on port ${PORT}`);
   }
 });
