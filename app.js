@@ -59,7 +59,7 @@ app.delete("/api/v1/delete/incubator/:incubatorid", (req, res) => {
     });
 })
 
-app.listen(3000, err => {
+app.listen(PORT, err => {
   if (!err) {
     console.log(`Sever on port ${PORT}`);
   }
